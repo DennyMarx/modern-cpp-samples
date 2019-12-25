@@ -74,6 +74,7 @@ target_compile_features(ConsoleApp PRIVATE cxx_std_14)
 # GTest app
 add_executable(GTestApp
   test/UnitTestsMain.cpp
+  test/testSensor.cpp
 )
 
 target_link_libraries(GTestApp PRIVATE gtest gmock gtest_main ${PRJ_MAIN_LIB})
