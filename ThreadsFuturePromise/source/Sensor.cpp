@@ -21,13 +21,13 @@ void Sensor::start()
 
 std::future<SensorData> Sensor::run()
 {
-	_sensorData.sensorValue++;
 	std::promise<SensorData> mySensorDataPromise;
 
 	if (_active) 
 	{
-		mySensorDataPromise.set_value(_sensorData);
+		_sensorData.sensorValue++;
 	}
 
+	mySensorDataPromise.set_value(_sensorData);
 	return mySensorDataPromise.get_future();
 }

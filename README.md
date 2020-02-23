@@ -3,5 +3,5 @@ This repo will contain my collection of modern C++ examples and show some advant
 
 | Sample | Description |
 |--------|-------------|
-| ThreadsFuturePromise | Shows: usage of thread, future/promise from standard lib |
+| [ThreadsFuturePromise](./ThreadsFuturePromise/README.md) | Shows: usage of thread, future/promise from standard lib |
 
