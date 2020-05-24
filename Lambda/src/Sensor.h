@@ -1,16 +1,22 @@
 #pragma once
 
 #include "ISensor.h"
+#include "ISensorCallback.h"
 
-class Sensor : public ISensor
+#include <functional>
+#include <vector>
+
+
+class Sensor : public ISensor, public ISensorCallback
 {
 public:
 	Sensor();
 	~Sensor();
 
+	void sense() override; 
+	void addObserver(std::function<void()> callback) override;
 	
 protected:
-
-
+	std::vector<std::function<void()>> _eventHandlers;
 };
 

@@ -4,5 +4,5 @@
 class ISensor
 {
 public:
-
+    virtual void sense() = 0;
 };

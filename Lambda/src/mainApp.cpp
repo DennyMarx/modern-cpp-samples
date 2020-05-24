@@ -1,9 +1,20 @@
 
-#include <iostream>
+#include "Algo.h"
+#include "Sensor.h"
 
 
 int main()
 {
-    std::cout << "Hello Lambda" << std::endl;    
+    Sensor sensor;
+    Algo algo;
+
+    algo.init(sensor);
+    
+    for(auto i=0; i<10; i++)
+    {
+        sensor.sense();
+        algo.run();
+    }
+
     return 0;
 }

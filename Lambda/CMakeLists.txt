@@ -63,6 +63,7 @@ endif()
 # console test app
 add_executable(ConsoleApp
   src/mainApp.cpp
+  src/Algo.cpp
 )
 
 target_link_libraries(ConsoleApp PRIVATE gtest gmock gtest_main ${PRJ_MAIN_LIB})
