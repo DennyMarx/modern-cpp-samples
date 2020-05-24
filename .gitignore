@@ -1,3 +1,4 @@
+
 ThreadsFuturePromise/cmake_install.cmake
 ThreadsFuturePromise/CMakeCache.txt
 ThreadsFuturePromise/CTestTestfile.cmake
@@ -9,4 +10,15 @@ ThreadsFuturePromise/lib
 ThreadsFuturePromise/CMakeFiles
 ThreadsFuturePromise/ThreadsFuturePromiseConApp
 ThreadsFuturePromise/build
+
+Lambda/cmake_install.cmake
+Lambda/CMakeCache.txt
+Lambda/CTestTestfile.cmake
+Lambda/Makefile
+Lambda/CMakeFiles/cmake.check_cache
+Lambda/_deps
+Lambda/bin
+Lambda/lib
+Lambda/CMakeFiles
+Lambda/build
 
